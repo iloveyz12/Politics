@@ -146,6 +146,17 @@ modelsummary::modelsummary(
 )
 ```
 
+```{r}
+#| echo: false
+#| eval: true
+#| label: fig-modelresultsfig
+#| fig-cap: "Explanatory models of flight time based on wing width and wing length"
+#| warning: false
+
+modelplot(first_model, conf_level = 0.9) +
+  labs(x = "90 per cent credibility interval")
+```
+
 
 
 
